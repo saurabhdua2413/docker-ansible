@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('s3 download ') {
       steps {
-    withAWS(credentials:'AKIAIPDUJD7B7ZAWI7WQ')    
+    withAWS(credentials:'ebf8c989-90b4-4c42-aabb-16abd0908ab2')    
         s3Download(bucket: 'iqbotsoftware', file: 'PsExec.exe', path: '/home/saurabh')
       }
     }
