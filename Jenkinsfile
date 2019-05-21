@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('s3 download ') {
       steps {
-        s3Download(bucket: 'iqbotsoftware', file: 'PsExec.exe')
+        s3Download(bucket: 'iqbotsoftware', path: 's3://iqbotsoftware/PsExec.exe')
       }
     }
   }
